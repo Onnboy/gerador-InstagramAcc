@@ -1,0 +1,14 @@
+# Ignorar a pasta .venv
+.venv/
+
+# Ignorar configurações do sistema
+*.env
+
+# Ignorar arquivos grandes específicos
+.venv/chrome-linux64/chrome
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar desnecessario
+.__pycache__/
