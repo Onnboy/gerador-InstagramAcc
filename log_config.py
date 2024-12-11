@@ -26,6 +26,4 @@ def configurar_logging():
     # Remover duplicação de logs
     logging.getLogger().propagate = False
 
-    logging.info("Logging configurado com sucesso!")
-
 configurar_logging()
