@@ -1,684 +1,177 @@
-2024-12-10 01:31:41,699 - DEBUG - Logger configurado com sucesso!
-2024-12-10 01:31:41,699 - INFO - Teste de log no terminal e no arquivo!
-2024-12-10 01:31:41,699 - DEBUG - Este é um log de depuração.
-2024-12-10 01:31:41,699 - ERROR - Este é um log de erro!
-2024-12-10 01:35:27,761 - INFO - Logging configurado com sucesso!
-2024-12-10 01:35:27,761 - DEBUG - Configuração de logging carregada corretamente!
-2024-12-10 01:35:27,762 - DEBUG - Log de depuração no início do main.py
-2024-12-10 01:35:27,762 - INFO - Log de informação no início do main.py
-2024-12-10 01:35:56,214 - INFO - Logging configurado com sucesso!
-2024-12-10 01:35:56,214 - DEBUG - Configuração de logging carregada corretamente!
-2024-12-10 01:35:56,345 - DEBUG - Not in REPL -> leaving logger event level as is.
-2024-12-10 01:35:56,346 - INFO - Iniciando o processo de cadastro automatizado...
-2024-12-10 01:35:56,346 - INFO - Inicializando o driver do Chrome...
-2024-12-10 01:35:56,346 - INFO - ====== WebDriver manager ======
-2024-12-10 01:35:56,429 - INFO - Get LATEST chromedriver version for google-chrome
-2024-12-10 01:35:56,431 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2024-12-10 01:35:56,546 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8629
-2024-12-10 01:35:56,549 - INFO - Get LATEST chromedriver version for google-chrome
-2024-12-10 01:35:56,550 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2024-12-10 01:35:56,668 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8629
-2024-12-10 01:35:56,670 - INFO - Driver [/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver] found in cache
-2024-12-10 01:35:56,670 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: /home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver
-2024-12-10 01:35:56,671 - DEBUG - Started executable: `/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver` in a child process with pid: 437180 using 0 to output -3
-2024-12-10 01:35:56,682 - DEBUG - POST http://localhost:48795/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--start-maximized', '--disable-notifications', '--disable-infobars', '--disable-popup-blocking', '--log-level=3']}}}}
-2024-12-10 01:35:56,682 - DEBUG - Starting new HTTP connection (1): localhost:48795
-2024-12-10 01:35:57,157 - DEBUG - http://localhost:48795 "POST /session HTTP/11" 200 0
-2024-12-10 01:35:57,157 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.85","chrome":{"chromedriverVersion":"131.0.6778.87 (ce31cae9487357cfd3bd62984ed5250121a71a23-refs/branch-heads/6778@{#2287})","userDataDir":"/tmp/.org.chromium.Chromium.CMQ4z3"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:36809"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"540598f6eaca410e144154b52f00aa2d"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:35:57,157 - DEBUG - Finished Request
-2024-12-10 01:35:57,157 - INFO - Driver inicializado!
-2024-12-10 01:35:57,158 - INFO - Acessando a pagina: https://www.instagram.com/accounts/emailsignup/
-2024-12-10 01:35:57,158 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/url {'url': 'https://www.instagram.com/accounts/emailsignup/'}
-2024-12-10 01:35:58,265 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/url HTTP/11" 200 0
-2024-12-10 01:35:58,265 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:35:58,265 - DEBUG - Finished Request
-2024-12-10 01:35:58,266 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/elements {'using': 'tag name', 'value': 'body'}
-2024-12-10 01:35:58,274 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/elements HTTP/11" 200 0
-2024-12-10 01:35:58,275 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.6"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:35:58,275 - DEBUG - Finished Request
-2024-12-10 01:35:58,275 - INFO - Página carregada com sucesso!: https://www.instagram.com/accounts/emailsignup/
-2024-12-10 01:36:02,632 - INFO - Gerando dados fictícios para cadastro...
-2024-12-10 01:36:02,632 - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
-2024-12-10 01:36:02,633 - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
-2024-12-10 01:36:02,634 - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
-2024-12-10 01:36:02,635 - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
-2024-12-10 01:36:02,635 - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
-2024-12-10 01:36:02,636 - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
-2024-12-10 01:36:02,636 - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
-2024-12-10 01:36:02,636 - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
-2024-12-10 01:36:02,637 - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
-2024-12-10 01:36:02,637 - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
-2024-12-10 01:36:02,637 - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
-2024-12-10 01:36:02,638 - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
-2024-12-10 01:36:02,639 - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
-2024-12-10 01:36:02,639 - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
-2024-12-10 01:36:02,639 - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
-2024-12-10 01:36:02,640 - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
-2024-12-10 01:36:02,640 - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
-2024-12-10 01:36:02,641 - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
-2024-12-10 01:36:02,641 - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:02,641 - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:02,641 - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
-2024-12-10 01:36:02,642 - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
-2024-12-10 01:36:02,642 - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
-2024-12-10 01:36:02,643 - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
-2024-12-10 01:36:02,643 - DEBUG - Looking for locale `en_US` in provider `faker.providers.isbn`.
-2024-12-10 01:36:02,643 - DEBUG - Provider `faker.providers.isbn` has been localized to `en_US`.
-2024-12-10 01:36:02,643 - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
-2024-12-10 01:36:02,644 - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
-2024-12-10 01:36:02,645 - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
-2024-12-10 01:36:02,645 - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
-2024-12-10 01:36:02,646 - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
-2024-12-10 01:36:02,646 - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
-2024-12-10 01:36:02,646 - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
-2024-12-10 01:36:02,646 - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
-2024-12-10 01:36:02,647 - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
-2024-12-10 01:36:02,648 - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
-2024-12-10 01:36:02,650 - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
-2024-12-10 01:36:02,652 - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
-2024-12-10 01:36:02,653 - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:02,653 - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:02,653 - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:02,653 - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
-2024-12-10 01:36:02,655 - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
-2024-12-10 01:36:02,655 - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:02,656 - INFO - Dados gerados: Email=jidx0fifgm@hotmail.com, Username=f1xy4nfyfi85, FullName=Dennis Hogan, Password=****
-2024-12-10 01:36:02,656 - INFO - Dados gerados:
-Email: jidx0fifgm@hotmail.com
-Username: f1xy4nfyfi85
-Full Name: Dennis Hogan
-Password: F3h8zuhoopQ1
-2024-12-10 01:36:02,656 - INFO - Tentativa '1' de preenchimento...
-2024-12-10 01:36:02,656 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element {'using': 'css selector', 'value': '[name="emailOrPhone"]'}
-2024-12-10 01:36:02,665 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element HTTP/11" 200 0
-2024-12-10 01:36:02,665 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.8"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:02,665 - DEBUG - Finished Request
-2024-12-10 01:36:02,665 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.8'}]}
-2024-12-10 01:36:02,672 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:02,672 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:02,672 - DEBUG - Finished Request
-2024-12-10 01:36:02,672 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.8/clear {}
-2024-12-10 01:36:02,696 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.8/clear HTTP/11" 200 0
-2024-12-10 01:36:02,697 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:02,697 - DEBUG - Finished Request
-2024-12-10 01:36:02,697 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.8/value {'text': 'jidx0fifgm@hotmail.com', 'value': ['j', 'i', 'd', 'x', '0', 'f', 'i', 'f', 'g', 'm', '@', 'h', 'o', 't', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm']}
-2024-12-10 01:36:02,800 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.8/value HTTP/11" 200 0
-2024-12-10 01:36:02,800 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:02,800 - DEBUG - Finished Request
-2024-12-10 01:36:02,800 - INFO - Campo 'emailOrPhone' preenchido com: jidx0fifgm@hotmail.com
-2024-12-10 01:36:06,414 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element {'using': 'css selector', 'value': '[name="fullName"]'}
-2024-12-10 01:36:06,422 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element HTTP/11" 200 0
-2024-12-10 01:36:06,423 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.11"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:06,423 - DEBUG - Finished Request
-2024-12-10 01:36:06,423 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.11'}]}
-2024-12-10 01:36:06,430 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:06,430 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:06,430 - DEBUG - Finished Request
-2024-12-10 01:36:06,430 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.11/clear {}
-2024-12-10 01:36:06,445 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.11/clear HTTP/11" 200 0
-2024-12-10 01:36:06,445 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:06,445 - DEBUG - Finished Request
-2024-12-10 01:36:06,445 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.11/value {'text': 'Dennis Hogan', 'value': ['D', 'e', 'n', 'n', 'i', 's', ' ', 'H', 'o', 'g', 'a', 'n']}
-2024-12-10 01:36:06,493 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.11/value HTTP/11" 200 0
-2024-12-10 01:36:06,493 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:06,493 - DEBUG - Finished Request
-2024-12-10 01:36:06,493 - INFO - Campo 'fullName' preenchido com: Dennis Hogan
-2024-12-10 01:36:11,040 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element {'using': 'css selector', 'value': '[name="username"]'}
-2024-12-10 01:36:11,048 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element HTTP/11" 200 0
-2024-12-10 01:36:11,048 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.12"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:11,048 - DEBUG - Finished Request
-2024-12-10 01:36:11,048 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.12'}]}
-2024-12-10 01:36:11,052 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:11,052 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:11,053 - DEBUG - Finished Request
-2024-12-10 01:36:11,053 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.12/clear {}
-2024-12-10 01:36:11,071 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.12/clear HTTP/11" 200 0
-2024-12-10 01:36:11,071 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:11,072 - DEBUG - Finished Request
-2024-12-10 01:36:11,072 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.12/value {'text': 'f1xy4nfyfi85', 'value': ['f', '1', 'x', 'y', '4', 'n', 'f', 'y', 'f', 'i', '8', '5']}
-2024-12-10 01:36:11,128 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.12/value HTTP/11" 200 0
-2024-12-10 01:36:11,129 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:11,129 - DEBUG - Finished Request
-2024-12-10 01:36:11,129 - INFO - Campo 'username' preenchido com: f1xy4nfyfi85
-2024-12-10 01:36:14,280 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element {'using': 'css selector', 'value': '[name="password"]'}
-2024-12-10 01:36:14,287 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element HTTP/11" 200 0
-2024-12-10 01:36:14,287 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.10"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:14,288 - DEBUG - Finished Request
-2024-12-10 01:36:14,288 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.10'}]}
-2024-12-10 01:36:14,294 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:14,295 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:14,295 - DEBUG - Finished Request
-2024-12-10 01:36:14,295 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.10/clear {}
-2024-12-10 01:36:14,311 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.10/clear HTTP/11" 200 0
-2024-12-10 01:36:14,311 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:14,311 - DEBUG - Finished Request
-2024-12-10 01:36:14,311 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.10/value {'text': 'F3h8zuhoopQ1', 'value': ['F', '3', 'h', '8', 'z', 'u', 'h', 'o', 'o', 'p', 'Q', '1']}
-2024-12-10 01:36:14,382 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.10/value HTTP/11" 200 0
-2024-12-10 01:36:14,383 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:14,383 - DEBUG - Finished Request
-2024-12-10 01:36:14,383 - INFO - Campo 'password' preenchido com: F3h8zuhoopQ1
-2024-12-10 01:36:17,508 - INFO - Campos preenchidos com sucesso!
-2024-12-10 01:36:17,509 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element {'using': 'xpath', 'value': "//button[contains(text(), 'Cadastre-se')]"}
-2024-12-10 01:36:17,518 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element HTTP/11" 200 0
-2024-12-10 01:36:17,518 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.15"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:17,519 - DEBUG - Finished Request
-2024-12-10 01:36:17,519 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.15'}]}
-2024-12-10 01:36:17,523 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:17,523 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:17,524 - DEBUG - Finished Request
-2024-12-10 01:36:17,524 - DEBUG - GET http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.15/enabled {}
-2024-12-10 01:36:17,529 - DEBUG - http://localhost:48795 "GET /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.15/enabled HTTP/11" 200 0
-2024-12-10 01:36:17,530 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:17,530 - DEBUG - Finished Request
-2024-12-10 01:36:20,874 - DEBUG - POST http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.15/click {}
-2024-12-10 01:36:20,924 - DEBUG - http://localhost:48795 "POST /session/540598f6eaca410e144154b52f00aa2d/element/f.85C86C5D8D66401FBBD7A0380522DE98.d.67CDD02C3959F86480033DEBAE27A31C.e.15/click HTTP/11" 200 0
-2024-12-10 01:36:20,925 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:20,925 - DEBUG - Finished Request
-2024-12-10 01:36:20,925 - INFO - Botão '//button[contains(text(), 'Cadastre-se')]' clicado com sucesso!
-2024-12-10 01:36:20,925 - INFO - Processo de cadastro finalizado!
-2024-12-10 01:36:20,925 - DEBUG - DELETE http://localhost:48795/session/540598f6eaca410e144154b52f00aa2d {}
-2024-12-10 01:36:20,980 - DEBUG - http://localhost:48795 "DELETE /session/540598f6eaca410e144154b52f00aa2d HTTP/11" 200 0
-2024-12-10 01:36:20,981 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:20,981 - DEBUG - Finished Request
-2024-12-10 01:36:20,993 - INFO - Driver encerrado!
-2024-12-10 01:36:33,739 - INFO - Logging configurado com sucesso!
-2024-12-10 01:36:33,739 - DEBUG - Configuração de logging carregada corretamente!
-2024-12-10 01:36:33,863 - DEBUG - Not in REPL -> leaving logger event level as is.
-2024-12-10 01:36:33,863 - INFO - Iniciando o processo de cadastro automatizado...
-2024-12-10 01:36:33,863 - INFO - Inicializando o driver do Chrome...
-2024-12-10 01:36:33,864 - INFO - ====== WebDriver manager ======
-2024-12-10 01:36:33,947 - INFO - Get LATEST chromedriver version for google-chrome
-2024-12-10 01:36:33,948 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2024-12-10 01:36:34,070 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8629
-2024-12-10 01:36:34,072 - INFO - Get LATEST chromedriver version for google-chrome
-2024-12-10 01:36:34,072 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2024-12-10 01:36:34,189 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8629
-2024-12-10 01:36:34,193 - INFO - Driver [/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver] found in cache
-2024-12-10 01:36:34,194 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: /home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver
-2024-12-10 01:36:34,194 - DEBUG - Started executable: `/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver` in a child process with pid: 437976 using 0 to output -3
-2024-12-10 01:36:34,205 - DEBUG - POST http://localhost:41345/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--start-maximized', '--disable-notifications', '--disable-infobars', '--disable-popup-blocking', '--log-level=3']}}}}
-2024-12-10 01:36:34,205 - DEBUG - Starting new HTTP connection (1): localhost:41345
-2024-12-10 01:36:34,670 - DEBUG - http://localhost:41345 "POST /session HTTP/11" 200 0
-2024-12-10 01:36:34,670 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.85","chrome":{"chromedriverVersion":"131.0.6778.87 (ce31cae9487357cfd3bd62984ed5250121a71a23-refs/branch-heads/6778@{#2287})","userDataDir":"/tmp/.org.chromium.Chromium.bZkcj6"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:40619"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"4821206a0c851bcd34d25e854ca59445"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:34,671 - DEBUG - Finished Request
-2024-12-10 01:36:34,671 - INFO - Driver inicializado!
-2024-12-10 01:36:34,671 - INFO - Acessando a pagina: https://www.instagram.com/accounts/emailsignup/
-2024-12-10 01:36:34,671 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/url {'url': 'https://www.instagram.com/accounts/emailsignup/'}
-2024-12-10 01:36:35,781 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/url HTTP/11" 200 0
-2024-12-10 01:36:35,781 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:35,782 - DEBUG - Finished Request
-2024-12-10 01:36:35,782 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/elements {'using': 'tag name', 'value': 'body'}
-2024-12-10 01:36:35,792 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/elements HTTP/11" 200 0
-2024-12-10 01:36:35,792 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.6"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:35,793 - DEBUG - Finished Request
-2024-12-10 01:36:35,793 - INFO - Página carregada com sucesso!: https://www.instagram.com/accounts/emailsignup/
-2024-12-10 01:36:39,977 - INFO - Gerando dados fictícios para cadastro...
-2024-12-10 01:36:39,977 - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
-2024-12-10 01:36:39,978 - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
-2024-12-10 01:36:39,979 - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
-2024-12-10 01:36:39,980 - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
-2024-12-10 01:36:39,980 - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
-2024-12-10 01:36:39,980 - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
-2024-12-10 01:36:39,981 - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
-2024-12-10 01:36:39,981 - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
-2024-12-10 01:36:39,982 - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
-2024-12-10 01:36:39,982 - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
-2024-12-10 01:36:39,982 - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
-2024-12-10 01:36:39,983 - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
-2024-12-10 01:36:39,983 - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
-2024-12-10 01:36:39,984 - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
-2024-12-10 01:36:39,984 - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
-2024-12-10 01:36:39,984 - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
-2024-12-10 01:36:39,985 - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
-2024-12-10 01:36:39,986 - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
-2024-12-10 01:36:39,986 - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:39,986 - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:39,986 - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
-2024-12-10 01:36:39,987 - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
-2024-12-10 01:36:39,987 - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
-2024-12-10 01:36:39,988 - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
-2024-12-10 01:36:39,988 - DEBUG - Looking for locale `en_US` in provider `faker.providers.isbn`.
-2024-12-10 01:36:39,988 - DEBUG - Provider `faker.providers.isbn` has been localized to `en_US`.
-2024-12-10 01:36:39,989 - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
-2024-12-10 01:36:39,990 - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
-2024-12-10 01:36:39,990 - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
-2024-12-10 01:36:39,991 - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
-2024-12-10 01:36:39,991 - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
-2024-12-10 01:36:39,991 - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
-2024-12-10 01:36:39,992 - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
-2024-12-10 01:36:39,992 - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
-2024-12-10 01:36:39,992 - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
-2024-12-10 01:36:39,993 - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
-2024-12-10 01:36:39,995 - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
-2024-12-10 01:36:39,996 - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
-2024-12-10 01:36:39,996 - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:39,996 - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:39,996 - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:39,996 - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
-2024-12-10 01:36:39,997 - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
-2024-12-10 01:36:39,998 - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:36:39,998 - INFO - Dados gerados: Email=4snaok1uwe@yahoo.com, Username=o4cw46f6cvyg, FullName=Robert Rodriguez, Password=****
-2024-12-10 01:36:39,998 - INFO - Dados gerados:
-Email: 4snaok1uwe@yahoo.com
-Username: o4cw46f6cvyg
-Full Name: Robert Rodriguez
-Password: CiA5GwGgnSSO
-2024-12-10 01:36:39,998 - INFO - Tentativa '1' de preenchimento...
-2024-12-10 01:36:39,998 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element {'using': 'css selector', 'value': '[name="emailOrPhone"]'}
-2024-12-10 01:36:40,006 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element HTTP/11" 200 0
-2024-12-10 01:36:40,006 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.8"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:40,006 - DEBUG - Finished Request
-2024-12-10 01:36:40,006 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.8'}]}
-2024-12-10 01:36:40,014 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:40,014 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:40,014 - DEBUG - Finished Request
-2024-12-10 01:36:40,014 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.8/clear {}
-2024-12-10 01:36:40,037 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.8/clear HTTP/11" 200 0
-2024-12-10 01:36:40,037 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:40,038 - DEBUG - Finished Request
-2024-12-10 01:36:40,038 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.8/value {'text': '4snaok1uwe@yahoo.com', 'value': ['4', 's', 'n', 'a', 'o', 'k', '1', 'u', 'w', 'e', '@', 'y', 'a', 'h', 'o', 'o', '.', 'c', 'o', 'm']}
-2024-12-10 01:36:40,129 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.8/value HTTP/11" 200 0
-2024-12-10 01:36:40,129 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:40,129 - DEBUG - Finished Request
-2024-12-10 01:36:40,129 - INFO - Campo 'emailOrPhone' preenchido com: 4snaok1uwe@yahoo.com
-2024-12-10 01:36:44,048 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element {'using': 'css selector', 'value': '[name="fullName"]'}
-2024-12-10 01:36:44,055 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element HTTP/11" 200 0
-2024-12-10 01:36:44,055 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.11"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:44,055 - DEBUG - Finished Request
-2024-12-10 01:36:44,056 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.11'}]}
-2024-12-10 01:36:44,064 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:44,064 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:44,064 - DEBUG - Finished Request
-2024-12-10 01:36:44,064 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.11/clear {}
-2024-12-10 01:36:44,079 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.11/clear HTTP/11" 200 0
-2024-12-10 01:36:44,079 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:44,079 - DEBUG - Finished Request
-2024-12-10 01:36:44,079 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.11/value {'text': 'Robert Rodriguez', 'value': ['R', 'o', 'b', 'e', 'r', 't', ' ', 'R', 'o', 'd', 'r', 'i', 'g', 'u', 'e', 'z']}
-2024-12-10 01:36:44,135 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.11/value HTTP/11" 200 0
-2024-12-10 01:36:44,136 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:44,136 - DEBUG - Finished Request
-2024-12-10 01:36:44,136 - INFO - Campo 'fullName' preenchido com: Robert Rodriguez
-2024-12-10 01:36:47,193 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element {'using': 'css selector', 'value': '[name="username"]'}
-2024-12-10 01:36:47,201 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element HTTP/11" 200 0
-2024-12-10 01:36:47,201 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.12"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:47,201 - DEBUG - Finished Request
-2024-12-10 01:36:47,201 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.12'}]}
-2024-12-10 01:36:47,206 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:47,207 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:47,207 - DEBUG - Finished Request
-2024-12-10 01:36:47,207 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.12/clear {}
-2024-12-10 01:36:47,222 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.12/clear HTTP/11" 200 0
-2024-12-10 01:36:47,222 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:47,222 - DEBUG - Finished Request
-2024-12-10 01:36:47,223 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.12/value {'text': 'o4cw46f6cvyg', 'value': ['o', '4', 'c', 'w', '4', '6', 'f', '6', 'c', 'v', 'y', 'g']}
-2024-12-10 01:36:47,289 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.12/value HTTP/11" 200 0
-2024-12-10 01:36:47,289 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:47,289 - DEBUG - Finished Request
-2024-12-10 01:36:47,289 - INFO - Campo 'username' preenchido com: o4cw46f6cvyg
-2024-12-10 01:36:50,903 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element {'using': 'css selector', 'value': '[name="password"]'}
-2024-12-10 01:36:50,911 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element HTTP/11" 200 0
-2024-12-10 01:36:50,911 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.10"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:50,911 - DEBUG - Finished Request
-2024-12-10 01:36:50,911 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.10'}]}
-2024-12-10 01:36:50,917 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:50,918 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:50,918 - DEBUG - Finished Request
-2024-12-10 01:36:50,918 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.10/clear {}
-2024-12-10 01:36:50,932 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.10/clear HTTP/11" 200 0
-2024-12-10 01:36:50,933 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:50,933 - DEBUG - Finished Request
-2024-12-10 01:36:50,933 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.10/value {'text': 'CiA5GwGgnSSO', 'value': ['C', 'i', 'A', '5', 'G', 'w', 'G', 'g', 'n', 'S', 'S', 'O']}
-2024-12-10 01:36:50,996 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.10/value HTTP/11" 200 0
-2024-12-10 01:36:50,996 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:50,996 - DEBUG - Finished Request
-2024-12-10 01:36:50,996 - INFO - Campo 'password' preenchido com: CiA5GwGgnSSO
-2024-12-10 01:36:55,280 - INFO - Campos preenchidos com sucesso!
-2024-12-10 01:36:55,280 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element {'using': 'xpath', 'value': "//button[contains(text(), 'Cadastre-se')]"}
-2024-12-10 01:36:55,288 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element HTTP/11" 200 0
-2024-12-10 01:36:55,288 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.15"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:55,288 - DEBUG - Finished Request
-2024-12-10 01:36:55,288 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.15'}]}
-2024-12-10 01:36:55,293 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/execute/sync HTTP/11" 200 0
-2024-12-10 01:36:55,294 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:55,294 - DEBUG - Finished Request
-2024-12-10 01:36:55,294 - DEBUG - GET http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.15/enabled {}
-2024-12-10 01:36:55,300 - DEBUG - http://localhost:41345 "GET /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.15/enabled HTTP/11" 200 0
-2024-12-10 01:36:55,300 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:36:55,300 - DEBUG - Finished Request
-2024-12-10 01:37:00,188 - DEBUG - POST http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.15/click {}
-2024-12-10 01:37:00,234 - DEBUG - http://localhost:41345 "POST /session/4821206a0c851bcd34d25e854ca59445/element/f.043FB0E7295725F5145E89DAB119BFD5.d.35644FBA980B217BB4B58B567D78C559.e.15/click HTTP/11" 200 0
-2024-12-10 01:37:00,234 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:37:00,234 - DEBUG - Finished Request
-2024-12-10 01:37:00,234 - INFO - Botão '//button[contains(text(), 'Cadastre-se')]' clicado com sucesso!
-2024-12-10 01:37:00,234 - INFO - Processo de cadastro finalizado!
-2024-12-10 01:37:00,234 - DEBUG - DELETE http://localhost:41345/session/4821206a0c851bcd34d25e854ca59445 {}
-2024-12-10 01:37:00,288 - DEBUG - http://localhost:41345 "DELETE /session/4821206a0c851bcd34d25e854ca59445 HTTP/11" 200 0
-2024-12-10 01:37:00,290 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:37:00,290 - DEBUG - Finished Request
-2024-12-10 01:37:00,310 - INFO - Driver encerrado!
-2024-12-10 01:38:37,959 - INFO - Logging configurado com sucesso!
-2024-12-10 01:38:37,959 - DEBUG - Configuração de logging carregada corretamente!
-2024-12-10 01:38:38,099 - DEBUG - Not in REPL -> leaving logger event level as is.
-2024-12-10 01:38:38,099 - INFO - Iniciando o processo de cadastro automatizado...
-2024-12-10 01:38:38,100 - INFO - Inicializando o driver do Chrome...
-2024-12-10 01:38:38,100 - INFO - ====== WebDriver manager ======
-2024-12-10 01:38:38,202 - INFO - Get LATEST chromedriver version for google-chrome
-2024-12-10 01:38:38,203 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2024-12-10 01:38:38,336 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8629
-2024-12-10 01:38:38,345 - INFO - Get LATEST chromedriver version for google-chrome
-2024-12-10 01:38:38,346 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2024-12-10 01:38:38,471 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8629
-2024-12-10 01:38:38,474 - INFO - Driver [/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver] found in cache
-2024-12-10 01:38:38,474 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: /home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver
-2024-12-10 01:38:38,475 - DEBUG - Started executable: `/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver` in a child process with pid: 439244 using 0 to output -3
-2024-12-10 01:38:38,486 - DEBUG - POST http://localhost:35927/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--start-maximized', '--disable-notifications', '--disable-infobars', '--disable-popup-blocking', '--log-level=3']}}}}
-2024-12-10 01:38:38,487 - DEBUG - Starting new HTTP connection (1): localhost:35927
-2024-12-10 01:38:39,060 - DEBUG - http://localhost:35927 "POST /session HTTP/11" 200 0
-2024-12-10 01:38:39,061 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.85","chrome":{"chromedriverVersion":"131.0.6778.87 (ce31cae9487357cfd3bd62984ed5250121a71a23-refs/branch-heads/6778@{#2287})","userDataDir":"/tmp/.org.chromium.Chromium.WwyxLh"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:45797"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"a514245f9dc2325d22ada471ba100bae"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:39,061 - DEBUG - Finished Request
-2024-12-10 01:38:39,062 - INFO - Driver inicializado!
-2024-12-10 01:38:39,062 - INFO - Acessando a pagina: https://www.instagram.com/accounts/emailsignup/
-2024-12-10 01:38:39,062 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/url {'url': 'https://www.instagram.com/accounts/emailsignup/'}
-2024-12-10 01:38:40,343 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/url HTTP/11" 200 0
-2024-12-10 01:38:40,344 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:40,344 - DEBUG - Finished Request
-2024-12-10 01:38:40,344 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/elements {'using': 'tag name', 'value': 'body'}
-2024-12-10 01:38:40,354 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/elements HTTP/11" 200 0
-2024-12-10 01:38:40,354 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.6"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:40,354 - DEBUG - Finished Request
-2024-12-10 01:38:40,354 - INFO - Página carregada com sucesso!: https://www.instagram.com/accounts/emailsignup/
-2024-12-10 01:38:43,482 - INFO - Gerando dados fictícios para cadastro...
-2024-12-10 01:38:43,482 - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
-2024-12-10 01:38:43,483 - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
-2024-12-10 01:38:43,484 - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
-2024-12-10 01:38:43,484 - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
-2024-12-10 01:38:43,485 - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
-2024-12-10 01:38:43,485 - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
-2024-12-10 01:38:43,486 - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
-2024-12-10 01:38:43,486 - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
-2024-12-10 01:38:43,486 - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
-2024-12-10 01:38:43,487 - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
-2024-12-10 01:38:43,487 - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
-2024-12-10 01:38:43,488 - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
-2024-12-10 01:38:43,489 - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
-2024-12-10 01:38:43,489 - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
-2024-12-10 01:38:43,489 - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
-2024-12-10 01:38:43,490 - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
-2024-12-10 01:38:43,490 - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
-2024-12-10 01:38:43,491 - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
-2024-12-10 01:38:43,492 - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:38:43,492 - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:38:43,492 - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
-2024-12-10 01:38:43,492 - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
-2024-12-10 01:38:43,493 - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
-2024-12-10 01:38:43,494 - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
-2024-12-10 01:38:43,494 - DEBUG - Looking for locale `en_US` in provider `faker.providers.isbn`.
-2024-12-10 01:38:43,494 - DEBUG - Provider `faker.providers.isbn` has been localized to `en_US`.
-2024-12-10 01:38:43,495 - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
-2024-12-10 01:38:43,495 - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
-2024-12-10 01:38:43,496 - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
-2024-12-10 01:38:43,496 - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
-2024-12-10 01:38:43,496 - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
-2024-12-10 01:38:43,496 - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
-2024-12-10 01:38:43,497 - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
-2024-12-10 01:38:43,497 - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
-2024-12-10 01:38:43,497 - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
-2024-12-10 01:38:43,499 - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
-2024-12-10 01:38:43,500 - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
-2024-12-10 01:38:43,501 - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
-2024-12-10 01:38:43,502 - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:38:43,502 - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:38:43,502 - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:38:43,502 - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
-2024-12-10 01:38:43,503 - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
-2024-12-10 01:38:43,504 - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:38:43,504 - INFO - Dados gerados: Email=l7kbyh83h4@yahoo.com, Username=i3r4h6dptdzx, FullName=Laura Jones, Password=****
-2024-12-10 01:38:43,504 - INFO - Dados gerados:
-Email: l7kbyh83h4@yahoo.com
-Username: i3r4h6dptdzx
-Full Name: Laura Jones
-Password: cUZLIt9MfUUq
-2024-12-10 01:38:43,504 - INFO - Tentativa '1' de preenchimento...
-2024-12-10 01:38:43,504 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/element {'using': 'css selector', 'value': '[name="emailOrPhone"]'}
-2024-12-10 01:38:43,513 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/element HTTP/11" 200 0
-2024-12-10 01:38:43,513 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.11"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:43,513 - DEBUG - Finished Request
-2024-12-10 01:38:43,513 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.11'}]}
-2024-12-10 01:38:43,520 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/execute/sync HTTP/11" 200 0
-2024-12-10 01:38:43,520 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:43,520 - DEBUG - Finished Request
-2024-12-10 01:38:43,520 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/element/f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.11/clear {}
-2024-12-10 01:38:43,568 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/element/f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.11/clear HTTP/11" 200 0
-2024-12-10 01:38:43,568 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:43,569 - DEBUG - Finished Request
-2024-12-10 01:38:43,569 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/element/f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.11/value {'text': 'l7kbyh83h4@yahoo.com', 'value': ['l', '7', 'k', 'b', 'y', 'h', '8', '3', 'h', '4', '@', 'y', 'a', 'h', 'o', 'o', '.', 'c', 'o', 'm']}
-2024-12-10 01:38:43,680 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/element/f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.11/value HTTP/11" 200 0
-2024-12-10 01:38:43,680 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:43,680 - DEBUG - Finished Request
-2024-12-10 01:38:43,680 - INFO - Campo 'emailOrPhone' preenchido com: l7kbyh83h4@yahoo.com
-2024-12-10 01:38:46,702 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/element {'using': 'css selector', 'value': '[name="fullName"]'}
-2024-12-10 01:38:46,709 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/element HTTP/11" 200 0
-2024-12-10 01:38:46,710 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.14"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:46,710 - DEBUG - Finished Request
-2024-12-10 01:38:46,710 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.14'}]}
-2024-12-10 01:38:46,718 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/execute/sync HTTP/11" 200 0
-2024-12-10 01:38:46,718 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:46,718 - DEBUG - Finished Request
-2024-12-10 01:38:46,718 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/element/f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.14/clear {}
-2024-12-10 01:38:46,736 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/element/f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.14/clear HTTP/11" 200 0
-2024-12-10 01:38:46,736 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:46,736 - DEBUG - Finished Request
-2024-12-10 01:38:46,736 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/element/f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.14/value {'text': 'Laura Jones', 'value': ['L', 'a', 'u', 'r', 'a', ' ', 'J', 'o', 'n', 'e', 's']}
-2024-12-10 01:38:46,801 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/element/f.97F11F2F49894E678C08682DA7E7C80E.d.7F5C1F133AFA00BF4BC3E3CCA93FAF46.e.14/value HTTP/11" 200 0
-2024-12-10 01:38:46,801 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:46,801 - DEBUG - Finished Request
-2024-12-10 01:38:46,801 - INFO - Campo 'fullName' preenchido com: Laura Jones
-2024-12-10 01:38:50,938 - DEBUG - POST http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae/element {'using': 'css selector', 'value': '[name="username"]'}
-2024-12-10 01:38:50,947 - DEBUG - http://localhost:35927 "POST /session/a514245f9dc2325d22ada471ba100bae/element HTTP/11" 404 0
-2024-12-10 01:38:50,947 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such window","message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=131.0.6778.85)","stacktrace":"#0 0x640cad19434a \u003Cunknown>\n#1 0x640caccaa6e0 \u003Cunknown>\n#2 0x640cacc8038f \u003Cunknown>\n#3 0x640cacd2589d \u003Cunknown>\n#4 0x640cacd3b88c \u003Cunknown>\n#5 0x640cacd1d203 \u003Cunknown>\n#6 0x640caccebcc0 \u003Cunknown>\n#7 0x640caccecc9e \u003Cunknown>\n#8 0x640cad161d3b \u003Cunknown>\n#9 0x640cad165cc2 \u003Cunknown>\n#10 0x640cad14eb6c \u003Cunknown>\n#11 0x640cad166837 \u003Cunknown>\n#12 0x640cad13410f \u003Cunknown>\n#13 0x640cad1835a8 \u003Cunknown>\n#14 0x640cad183770 \u003Cunknown>\n#15 0x640cad1931c6 \u003Cunknown>\n#16 0x7d8f12ca1e2e \u003Cunknown>\n#17 0x7d8f12d33a4c \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '809', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:50,947 - DEBUG - Finished Request
-2024-12-10 01:38:50,948 - ERROR - Erro ao preencher o campo 'username': Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.85)
-Stacktrace:
-#0 0x640cad19434a <unknown>
-#1 0x640caccaa6e0 <unknown>
-#2 0x640cacc8038f <unknown>
-#3 0x640cacd2589d <unknown>
-#4 0x640cacd3b88c <unknown>
-#5 0x640cacd1d203 <unknown>
-#6 0x640caccebcc0 <unknown>
-#7 0x640caccecc9e <unknown>
-#8 0x640cad161d3b <unknown>
-#9 0x640cad165cc2 <unknown>
-#10 0x640cad14eb6c <unknown>
-#11 0x640cad166837 <unknown>
-#12 0x640cad13410f <unknown>
-#13 0x640cad1835a8 <unknown>
-#14 0x640cad183770 <unknown>
-#15 0x640cad1931c6 <unknown>
-#16 0x7d8f12ca1e2e <unknown>
-#17 0x7d8f12d33a4c <unknown>
-
-2024-12-10 01:38:50,948 - ERROR - Falha ao preencher o nome de usuário
-2024-12-10 01:38:50,948 - CRITICAL - Falha ao preencer o cadastro. Encerrando o programa
-2024-12-10 01:38:50,948 - DEBUG - DELETE http://localhost:35927/session/a514245f9dc2325d22ada471ba100bae {}
-2024-12-10 01:38:50,957 - DEBUG - http://localhost:35927 "DELETE /session/a514245f9dc2325d22ada471ba100bae HTTP/11" 200 0
-2024-12-10 01:38:50,957 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:38:50,957 - DEBUG - Finished Request
-2024-12-10 01:38:50,973 - INFO - Driver encerrado!
-2024-12-10 01:40:09,922 - INFO - Logging configurado com sucesso!
-2024-12-10 01:40:09,922 - DEBUG - Configuração de logging carregada corretamente!
-2024-12-10 01:40:10,062 - DEBUG - Not in REPL -> leaving logger event level as is.
-2024-12-10 01:40:10,062 - INFO - Iniciando o processo de cadastro automatizado...
-2024-12-10 01:40:10,063 - INFO - Inicializando o driver do Chrome...
-2024-12-10 01:40:10,063 - INFO - ====== WebDriver manager ======
-2024-12-10 01:40:10,158 - INFO - Get LATEST chromedriver version for google-chrome
-2024-12-10 01:40:10,159 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2024-12-10 01:40:10,288 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8629
-2024-12-10 01:40:10,290 - INFO - Get LATEST chromedriver version for google-chrome
-2024-12-10 01:40:10,290 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2024-12-10 01:40:10,477 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8629
-2024-12-10 01:40:10,480 - INFO - Driver [/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver] found in cache
-2024-12-10 01:40:10,481 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: /home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver
-2024-12-10 01:40:10,481 - DEBUG - Started executable: `/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.87/chromedriver-linux64/chromedriver` in a child process with pid: 440221 using 0 to output -3
-2024-12-10 01:40:10,492 - DEBUG - POST http://localhost:48879/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--start-maximized', '--disable-notifications', '--disable-infobars', '--disable-popup-blocking', '--log-level=3']}}}}
-2024-12-10 01:40:10,493 - DEBUG - Starting new HTTP connection (1): localhost:48879
-2024-12-10 01:40:11,001 - DEBUG - http://localhost:48879 "POST /session HTTP/11" 200 0
-2024-12-10 01:40:11,001 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.85","chrome":{"chromedriverVersion":"131.0.6778.87 (ce31cae9487357cfd3bd62984ed5250121a71a23-refs/branch-heads/6778@{#2287})","userDataDir":"/tmp/.org.chromium.Chromium.ZM9NU9"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:37521"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"a3f37e40d1f56275c2e8bd06b95dc392"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:11,001 - DEBUG - Finished Request
-2024-12-10 01:40:11,002 - INFO - Driver inicializado!
-2024-12-10 01:40:11,002 - INFO - Acessando a pagina: https://www.instagram.com/accounts/emailsignup/
-2024-12-10 01:40:11,002 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/url {'url': 'https://www.instagram.com/accounts/emailsignup/'}
-2024-12-10 01:40:12,486 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/url HTTP/11" 200 0
-2024-12-10 01:40:12,486 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:12,487 - DEBUG - Finished Request
-2024-12-10 01:40:12,487 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/elements {'using': 'tag name', 'value': 'body'}
-2024-12-10 01:40:12,496 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/elements HTTP/11" 200 0
-2024-12-10 01:40:12,496 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.6"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:12,496 - DEBUG - Finished Request
-2024-12-10 01:40:12,497 - INFO - Página carregada com sucesso!: https://www.instagram.com/accounts/emailsignup/
-2024-12-10 01:40:17,465 - INFO - Gerando dados fictícios para cadastro...
-2024-12-10 01:40:17,465 - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
-2024-12-10 01:40:17,466 - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
-2024-12-10 01:40:17,467 - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
-2024-12-10 01:40:17,467 - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
-2024-12-10 01:40:17,468 - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
-2024-12-10 01:40:17,468 - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
-2024-12-10 01:40:17,469 - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
-2024-12-10 01:40:17,469 - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
-2024-12-10 01:40:17,470 - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
-2024-12-10 01:40:17,470 - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
-2024-12-10 01:40:17,471 - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
-2024-12-10 01:40:17,471 - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
-2024-12-10 01:40:17,472 - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
-2024-12-10 01:40:17,472 - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
-2024-12-10 01:40:17,472 - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
-2024-12-10 01:40:17,473 - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
-2024-12-10 01:40:17,474 - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
-2024-12-10 01:40:17,474 - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
-2024-12-10 01:40:17,475 - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:40:17,475 - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:40:17,475 - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
-2024-12-10 01:40:17,475 - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
-2024-12-10 01:40:17,476 - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
-2024-12-10 01:40:17,476 - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
-2024-12-10 01:40:17,477 - DEBUG - Looking for locale `en_US` in provider `faker.providers.isbn`.
-2024-12-10 01:40:17,477 - DEBUG - Provider `faker.providers.isbn` has been localized to `en_US`.
-2024-12-10 01:40:17,477 - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
-2024-12-10 01:40:17,478 - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
-2024-12-10 01:40:17,478 - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
-2024-12-10 01:40:17,479 - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
-2024-12-10 01:40:17,479 - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
-2024-12-10 01:40:17,479 - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
-2024-12-10 01:40:17,480 - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
-2024-12-10 01:40:17,480 - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
-2024-12-10 01:40:17,481 - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
-2024-12-10 01:40:17,482 - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
-2024-12-10 01:40:17,483 - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
-2024-12-10 01:40:17,485 - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
-2024-12-10 01:40:17,486 - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:40:17,486 - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:40:17,486 - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:40:17,486 - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
-2024-12-10 01:40:17,487 - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
-2024-12-10 01:40:17,488 - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
-2024-12-10 01:40:17,488 - INFO - Dados gerados: Email=vgfzhmso1l@gmail.com, Username=lf4na1mrrqqn, FullName=Jesus Snyder, Password=****
-2024-12-10 01:40:17,488 - INFO - Dados gerados:
-Email: vgfzhmso1l@gmail.com
-Username: lf4na1mrrqqn
-Full Name: Jesus Snyder
-Password: XgOD4qaBCs4X
-2024-12-10 01:40:17,488 - INFO - Tentativa '1' de preenchimento...
-2024-12-10 01:40:17,488 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element {'using': 'css selector', 'value': '[name="emailOrPhone"]'}
-2024-12-10 01:40:17,496 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element HTTP/11" 200 0
-2024-12-10 01:40:17,496 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.9"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:17,496 - DEBUG - Finished Request
-2024-12-10 01:40:17,497 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.9'}]}
-2024-12-10 01:40:17,504 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync HTTP/11" 200 0
-2024-12-10 01:40:17,504 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:17,504 - DEBUG - Finished Request
-2024-12-10 01:40:17,504 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.9/clear {}
-2024-12-10 01:40:17,528 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.9/clear HTTP/11" 200 0
-2024-12-10 01:40:17,528 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:17,528 - DEBUG - Finished Request
-2024-12-10 01:40:17,528 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.9/value {'text': 'vgfzhmso1l@gmail.com', 'value': ['v', 'g', 'f', 'z', 'h', 'm', 's', 'o', '1', 'l', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm']}
-2024-12-10 01:40:17,624 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.9/value HTTP/11" 200 0
-2024-12-10 01:40:17,624 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:17,624 - DEBUG - Finished Request
-2024-12-10 01:40:17,624 - INFO - Campo 'emailOrPhone' preenchido com: vgfzhmso1l@gmail.com
-2024-12-10 01:40:21,444 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element {'using': 'css selector', 'value': '[name="fullName"]'}
-2024-12-10 01:40:21,451 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element HTTP/11" 200 0
-2024-12-10 01:40:21,452 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.12"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:21,452 - DEBUG - Finished Request
-2024-12-10 01:40:21,452 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.12'}]}
-2024-12-10 01:40:21,458 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync HTTP/11" 200 0
-2024-12-10 01:40:21,458 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:21,458 - DEBUG - Finished Request
-2024-12-10 01:40:21,458 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.12/clear {}
-2024-12-10 01:40:21,472 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.12/clear HTTP/11" 200 0
-2024-12-10 01:40:21,473 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:21,473 - DEBUG - Finished Request
-2024-12-10 01:40:21,473 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.12/value {'text': 'Jesus Snyder', 'value': ['J', 'e', 's', 'u', 's', ' ', 'S', 'n', 'y', 'd', 'e', 'r']}
-2024-12-10 01:40:21,547 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.12/value HTTP/11" 200 0
-2024-12-10 01:40:21,547 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:21,548 - DEBUG - Finished Request
-2024-12-10 01:40:21,548 - INFO - Campo 'fullName' preenchido com: Jesus Snyder
-2024-12-10 01:40:26,481 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element {'using': 'css selector', 'value': '[name="username"]'}
-2024-12-10 01:40:26,508 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element HTTP/11" 200 0
-2024-12-10 01:40:26,509 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.13"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:26,509 - DEBUG - Finished Request
-2024-12-10 01:40:26,509 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.13'}]}
-2024-12-10 01:40:26,521 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync HTTP/11" 200 0
-2024-12-10 01:40:26,524 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:26,524 - DEBUG - Finished Request
-2024-12-10 01:40:26,525 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.13/clear {}
-2024-12-10 01:40:26,571 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.13/clear HTTP/11" 200 0
-2024-12-10 01:40:26,573 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:26,576 - DEBUG - Finished Request
-2024-12-10 01:40:26,577 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.13/value {'text': 'lf4na1mrrqqn', 'value': ['l', 'f', '4', 'n', 'a', '1', 'm', 'r', 'r', 'q', 'q', 'n']}
-2024-12-10 01:40:26,658 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.13/value HTTP/11" 200 0
-2024-12-10 01:40:26,658 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:26,658 - DEBUG - Finished Request
-2024-12-10 01:40:26,658 - INFO - Campo 'username' preenchido com: lf4na1mrrqqn
-2024-12-10 01:40:29,923 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element {'using': 'css selector', 'value': '[name="password"]'}
-2024-12-10 01:40:29,931 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element HTTP/11" 200 0
-2024-12-10 01:40:29,931 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.11"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:29,931 - DEBUG - Finished Request
-2024-12-10 01:40:29,931 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.11'}]}
-2024-12-10 01:40:29,937 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync HTTP/11" 200 0
-2024-12-10 01:40:29,937 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:29,937 - DEBUG - Finished Request
-2024-12-10 01:40:29,938 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.11/clear {}
-2024-12-10 01:40:29,954 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.11/clear HTTP/11" 200 0
-2024-12-10 01:40:29,954 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:29,954 - DEBUG - Finished Request
-2024-12-10 01:40:29,954 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.11/value {'text': 'XgOD4qaBCs4X', 'value': ['X', 'g', 'O', 'D', '4', 'q', 'a', 'B', 'C', 's', '4', 'X']}
-2024-12-10 01:40:30,041 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.11/value HTTP/11" 200 0
-2024-12-10 01:40:30,042 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:30,042 - DEBUG - Finished Request
-2024-12-10 01:40:30,042 - INFO - Campo 'password' preenchido com: XgOD4qaBCs4X
-2024-12-10 01:40:33,850 - INFO - Campos preenchidos com sucesso!
-2024-12-10 01:40:33,850 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element {'using': 'xpath', 'value': "//button[contains(text(), 'Cadastre-se')]"}
-2024-12-10 01:40:33,859 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element HTTP/11" 200 0
-2024-12-10 01:40:33,859 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.16"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:33,859 - DEBUG - Finished Request
-2024-12-10 01:40:33,859 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.16'}]}
-2024-12-10 01:40:33,866 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/execute/sync HTTP/11" 200 0
-2024-12-10 01:40:33,866 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:33,866 - DEBUG - Finished Request
-2024-12-10 01:40:33,867 - DEBUG - GET http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.16/enabled {}
-2024-12-10 01:40:33,873 - DEBUG - http://localhost:48879 "GET /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.16/enabled HTTP/11" 200 0
-2024-12-10 01:40:33,873 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:33,873 - DEBUG - Finished Request
-2024-12-10 01:40:38,125 - DEBUG - POST http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.16/click {}
-2024-12-10 01:40:38,184 - DEBUG - http://localhost:48879 "POST /session/a3f37e40d1f56275c2e8bd06b95dc392/element/f.A14004DE802E2CF3B5968C4612279496.d.4516EA9555B1AEBC1CC59792F88F2532.e.16/click HTTP/11" 200 0
-2024-12-10 01:40:38,184 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:38,184 - DEBUG - Finished Request
-2024-12-10 01:40:38,184 - INFO - Botão '//button[contains(text(), 'Cadastre-se')]' clicado com sucesso!
-2024-12-10 01:40:38,184 - INFO - Processo de cadastro finalizado!
-2024-12-10 01:40:38,184 - DEBUG - DELETE http://localhost:48879/session/a3f37e40d1f56275c2e8bd06b95dc392 {}
-2024-12-10 01:40:38,238 - DEBUG - http://localhost:48879 "DELETE /session/a3f37e40d1f56275c2e8bd06b95dc392 HTTP/11" 200 0
-2024-12-10 01:40:38,239 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-12-10 01:40:38,239 - DEBUG - Finished Request
-2024-12-10 01:40:38,252 - INFO - Driver encerrado!
+2024-12-11 15:44:12 [INFO] (log_config): Logging configurado com sucesso!
+2024-12-11 15:44:12 [DEBUG] (factory): Not in REPL -> leaving logger event level as is.
+2024-12-11 15:44:12 [INFO] (main): Iniciando o robo...
+2024-12-11 15:44:12 [INFO] (driver_utils): Inicializando o driver do Chrome...
+2024-12-11 15:44:12 [INFO] (logger): ====== WebDriver manager ======
+2024-12-11 15:44:12 [INFO] (logger): Get LATEST chromedriver version for google-chrome
+2024-12-11 15:44:12 [DEBUG] (connectionpool): Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-11 15:44:13 [DEBUG] (connectionpool): https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8639
+2024-12-11 15:44:13 [INFO] (logger): Get LATEST chromedriver version for google-chrome
+2024-12-11 15:44:13 [DEBUG] (connectionpool): Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2024-12-11 15:44:13 [DEBUG] (connectionpool): https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/11" 200 8639
+2024-12-11 15:44:13 [INFO] (logger): Driver [/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+2024-12-11 15:44:13 [DEBUG] (driver_finder): Skipping Selenium Manager; path to chrome driver specified in Service class: /home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver
+2024-12-11 15:44:13 [DEBUG] (service): Started executable: `/home/andre/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver` in a child process with pid: 94968 using 0 to output -3
+2024-12-11 15:44:13 [DEBUG] (remote_connection): POST http://localhost:54761/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--start-maximized', '--disable-notifications', '--disable-infobars', '--disable-popup-blocking', '--log-level=3']}}}}
+2024-12-11 15:44:13 [DEBUG] (connectionpool): Starting new HTTP connection (1): localhost:54761
+2024-12-11 15:44:13 [DEBUG] (connectionpool): http://localhost:54761 "POST /session HTTP/11" 200 0
+2024-12-11 15:44:13 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.85","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/tmp/.org.chromium.Chromium.qFdExr"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:39329"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"df92097cc1a3d68e970f8fc6513eb091"}} | headers=HTTPHeaderDict({'Content-Length': '849', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:13 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:13 [INFO] (driver_utils): Driver inicializado!
+2024-12-11 15:44:13 [INFO] (data_utils): Gerando dados fictícios para cadastro...
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.address`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.address` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.automotive`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.automotive` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.bank`.
+2024-12-11 15:44:13 [DEBUG] (factory): Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.barcode`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.barcode` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.color`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.color` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.company`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.company` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.credit_card` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.currency`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.currency` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.date_time`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.date_time` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.geo`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.geo` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.internet`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.internet` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.isbn`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.isbn` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.job`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.job` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.lorem`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.lorem` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.misc`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.misc` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.passport`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.passport` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.person`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.person` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.phone_number` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-11 15:44:13 [DEBUG] (factory): Looking for locale `en_US` in provider `faker.providers.ssn`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.ssn` has been localized to `en_US`.
+2024-12-11 15:44:13 [DEBUG] (factory): Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-11 15:44:13 [INFO] (data_utils): Dados gerados: Email=brldl28pmk@yahoo.com, Username=4q88fn1zfuuo, FullName=Joseph Chen, Password=****
+2024-12-11 15:44:13 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/url {'url': 'https://www.instagram.com/accounts/emailsignup/'}
+2024-12-11 15:44:15 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/url HTTP/11" 200 0
+2024-12-11 15:44:15 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:15 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:15 [DEBUG] (remote_connection): GET http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/url {}
+2024-12-11 15:44:15 [DEBUG] (connectionpool): http://localhost:54761 "GET /session/df92097cc1a3d68e970f8fc6513eb091/url HTTP/11" 200 0
+2024-12-11 15:44:15 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":"https://www.instagram.com/accounts/emailsignup/"} | headers=HTTPHeaderDict({'Content-Length': '59', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:15 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:17 [INFO] (form_utils): Tentativa 1 de preenchimento...
+2024-12-11 15:44:17 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element {'using': 'css selector', 'value': '[name="emailOrPhone"]'}
+2024-12-11 15:44:17 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element HTTP/11" 200 0
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.7"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:17 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.7'}]}
+2024-12-11 15:44:17 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/execute/sync HTTP/11" 200 0
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:17 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.7/clear {}
+2024-12-11 15:44:17 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.7/clear HTTP/11" 200 0
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:17 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.7/value {'text': 'brldl28pmk@yahoo.com', 'value': ['b', 'r', 'l', 'd', 'l', '2', '8', 'p', 'm', 'k', '@', 'y', 'a', 'h', 'o', 'o', '.', 'c', 'o', 'm']}
+2024-12-11 15:44:17 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.7/value HTTP/11" 200 0
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:17 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.7'}, 'value']}
+2024-12-11 15:44:17 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/execute/sync HTTP/11" 200 0
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":"brldl28pmk@yahoo.com"} | headers=HTTPHeaderDict({'Content-Length': '32', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:17 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:17 [INFO] (form_utils): Campo 'E-mail' preenchido com: brldl28pmk@yahoo.com
+2024-12-11 15:44:20 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element {'using': 'css selector', 'value': '[name="fullName"]'}
+2024-12-11 15:44:20 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element HTTP/11" 200 0
+2024-12-11 15:44:20 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.10"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:20 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:20 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.10/clear {}
+2024-12-11 15:44:20 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.10/clear HTTP/11" 200 0
+2024-12-11 15:44:20 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:20 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:20 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.10/value {'text': 'Joseph Chen', 'value': ['J', 'o', 's', 'e', 'p', 'h', ' ', 'C', 'h', 'e', 'n']}
+2024-12-11 15:44:20 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.10/value HTTP/11" 200 0
+2024-12-11 15:44:20 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:20 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:20 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.10'}, 'value']}
+2024-12-11 15:44:20 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/execute/sync HTTP/11" 200 0
+2024-12-11 15:44:20 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":"Joseph Chen"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:20 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:20 [INFO] (form_utils): Campo 'Nome completo' preenchido com: Joseph Chen
+2024-12-11 15:44:22 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element {'using': 'css selector', 'value': '[name="username"]'}
+2024-12-11 15:44:22 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element HTTP/11" 200 0
+2024-12-11 15:44:22 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.11"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:22 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:22 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.11/clear {}
+2024-12-11 15:44:22 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.11/clear HTTP/11" 200 0
+2024-12-11 15:44:22 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:22 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:22 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.11/value {'text': '4q88fn1zfuuo', 'value': ['4', 'q', '8', '8', 'f', 'n', '1', 'z', 'f', 'u', 'u', 'o']}
+2024-12-11 15:44:22 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.11/value HTTP/11" 200 0
+2024-12-11 15:44:22 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:22 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:22 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.11'}, 'value']}
+2024-12-11 15:44:23 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/execute/sync HTTP/11" 200 0
+2024-12-11 15:44:23 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":"4q88fn1zfuuo"} | headers=HTTPHeaderDict({'Content-Length': '24', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:23 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:23 [INFO] (form_utils): Campo 'Nome de usuario': 4q88fn1zfuuo
+2024-12-11 15:44:25 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element {'using': 'css selector', 'value': '[name="password"]'}
+2024-12-11 15:44:25 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element HTTP/11" 200 0
+2024-12-11 15:44:25 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.9"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:25 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:25 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.9/clear {}
+2024-12-11 15:44:25 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.9/clear HTTP/11" 200 0
+2024-12-11 15:44:25 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:25 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:25 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.9/value {'text': '2EhUnAvr93l7', 'value': ['2', 'E', 'h', 'U', 'n', 'A', 'v', 'r', '9', '3', 'l', '7']}
+2024-12-11 15:44:25 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.9/value HTTP/11" 200 0
+2024-12-11 15:44:25 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:25 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:25 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.9'}, 'value']}
+2024-12-11 15:44:25 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/execute/sync HTTP/11" 200 0
+2024-12-11 15:44:25 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":"2EhUnAvr93l7"} | headers=HTTPHeaderDict({'Content-Length': '24', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:25 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:25 [INFO] (form_utils): Campo 'Senha' preenchida com: 2EhUnAvr93l7
+2024-12-11 15:44:28 [INFO] (form_utils): Campos preenchidos com sucesso!
+2024-12-11 15:44:33 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element {'using': 'xpath', 'value': "//button[contains(text(), 'Cadastre-se')]"}
+2024-12-11 15:44:33 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element HTTP/11" 200 0
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.14"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:33 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.14'}]}
+2024-12-11 15:44:33 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/execute/sync HTTP/11" 200 0
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:33 [DEBUG] (remote_connection): GET http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.14/enabled {}
+2024-12-11 15:44:33 [DEBUG] (connectionpool): http://localhost:54761 "GET /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.14/enabled HTTP/11" 200 0
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:33 [DEBUG] (remote_connection): POST http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.14/click {}
+2024-12-11 15:44:33 [DEBUG] (connectionpool): http://localhost:54761 "POST /session/df92097cc1a3d68e970f8fc6513eb091/element/f.BE0F7331FEE860E50B122CE36EA18CA5.d.AC0200C596DD4BC0FA9364DCD07F1A52.e.14/click HTTP/11" 200 0
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:33 [INFO] (form_utils): Cadastro enviado com sucesso!
+2024-12-11 15:44:33 [INFO] (main): Dados gerados:
+Email: brldl28pmk@yahoo.com
+Username: 4q88fn1zfuuo
+Full Name: Joseph Chen
+Password: 2EhUnAvr93l7
+2024-12-11 15:44:33 [INFO] (main): Processo de cadastro finalizado!
+2024-12-11 15:44:33 [DEBUG] (remote_connection): DELETE http://localhost:54761/session/df92097cc1a3d68e970f8fc6513eb091 {}
+2024-12-11 15:44:33 [DEBUG] (connectionpool): http://localhost:54761 "DELETE /session/df92097cc1a3d68e970f8fc6513eb091 HTTP/11" 200 0
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-11 15:44:33 [DEBUG] (remote_connection): Finished Request
+2024-12-11 15:44:33 [INFO] (main): Driver encerrado!
+2024-12-11 15:44:33 [INFO] (main): Tempo total de execução do script: 20.39 segundos
